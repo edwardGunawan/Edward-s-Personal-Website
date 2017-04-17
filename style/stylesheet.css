@@ -1,0 +1,99 @@
+body {
+  background: #ece9e6; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #ece9e6, #ffffff); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #ece9e6, #ffffff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.front-page{
+  margin: 0 auto;
+  padding:0 20px;
+  max-width: 680px;
+
+
+}
+
+.main-page{
+  border-bottom:2px solid #cdc9c9;
+}
+
+.intro-container{
+  padding:200px 0 30px;
+}
+
+.introPre, #location{
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+
+
+@media (min-width: 640px)
+.introMain {
+  font-size: 2.2rem;
+  max-width:60%;
+  line-height:1.2;
+  font-weight:bold;
+  margin: 10px 0 20px;
+}
+
+/*.header-section, .intro{
+  text-align: center;
+  line-height:1.2;
+}*/
+.about-container {
+  max-width:860px;
+  margin:0 auto;
+  padding: 0 20px;
+}
+
+
+dt{
+  width:30%;
+  display:inline;
+  vertical-align: top;
+  margin-bottom:0px;
+}
+dd h4{
+  display:inline;
+  vertical-align: top;
+}
+
+.education, .industry {
+  /*margin: 0 40px 0 20%;*/
+}
+
+.title, .year{
+  margin:0
+}
+.pure-g{
+  letter-spacing: 0;
+}
+
+.header-section  {
+  text-transform: uppercase;
+  text-align:center;
+  line-height:1;
+  font-size: 2em;
+  letter-spacing: 4px;
+  border-bottom:3px solid #0f1926;
+}
+
+.header-section {
+  max-width:100%;
+  /*text-align: left;*/
+}
+
+
+
+.intro {
+  margin:auto;
+  margin-top: 40px;
+  max-width:680px;
+}
+
+
+section{
+  height:100vh; /* set it to the entire page */
+  /*border-top: 0.5px solid rgba(0,4,96,0.2);*/
+  /*border-bottom:2px solid #cdc9c9;*/
+  /*margin:auto;*/
+}

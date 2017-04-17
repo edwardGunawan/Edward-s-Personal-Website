@@ -1,43 +1,181 @@
 <!DOCTYPE html>
-<html lang=en>
+<html lang="en">
   <head>
     <meta charset="utf-8">
-    <script type="text/javascript" src="./node_modules/ejs/ejs.min.js"></script>
+    <meta name="author" content="Edward Huang">
+    <meta name="description" content="Edward Huang Personal Website">
+    <meta name="keyword" content="website, computer science, html, css, Edward Huang, Edward, Gunawan,
+    UCSD, development, software engineer, Software developer, IBM">
+    <!-- good onall device -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="robots" content=" inde">
+
+    <!-- in facebook -->
+    <meta name="og:image" content="myImage"> <!-- todo -->
+    <meta name="og:description" content="Personal Website">
+    <meta name="og:title" content="Edward Huang">
+    <meta name="twitter:title" content="Edward Huang">
+
+    <!-- for favicon in ms -->
+    <meta name="msapplication-TileImage" content="myImage"> <!-- todo -->
+    <meta name="maspplication-TileColor" content=""> <!-- todo -->
+
+    <!-- what to mention in http header -->
+    <meta http-equiv="content-type" content="text/html">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+
+    <link rel="short icon" href="/css/master.css" type="image/x-icon"> <!-- adding icon -->
+    <link rel="stylesheet" href="./lib/pure-release-0.6.2/pure-min.css" media="screen">
+    <link rel="stylesheet" href="./style/stylesheet.css" media="screen">
+
+    <script src="./lib/handlebars-v4.0.5.js" charset="utf-8"></script>
+
+
     <title>Edward Huang</title>
   </head>
+
+
   <body>
-    <header>
-      <p>Header</p>
+    <!--================ front page ===================-->
+    <section class="main-page">
+      <article class="front-page">
+        <header class="intro-container">
+          <h1 class="intro-pre">Hello,</h1>
+          <h3 class="intro-main">My name is <span id="name">Edward Huang<span>,
+            a software engineer who loves to build and design <span id="things">things</span></h3>
+          <h5 id="location">{{location}}</h5>
+        </header>
 
-    </header>
+        <nav class="nav pure-menu-list pure-menu-horizontal">
+          <ul class="pure-menu-list">
+            <li class="pure-menu-item"><a href="#Email" class="pure-menu-link" target="_blank">Email</a></li>
+            <li class="pure-menu-item"><a href="#LinkedIn" class="pure-menu-link" target="_blank"> LinkedIn</a></li>
+            <li class="pure-menu-item"><a href="#Resume" class="pure-menu-link" target="_blank"> Resume </a></li>
+          </ul>
+        </nav>
+      </article>
+    </section>
+
+    <!--====================== end frontPage =============-->
+
+    <!-- <hr class="regular-hr"> -->
+
+
+    <!--====================== main page =================-->
+
     <main>
-      <section>
-        <header>About</header>
-        <article class="">
-            <header>Self Intro</header>
-        </article>
+      <section class="about">
+        <div class="about-container">
 
-        <article>
-          <header>Education</header>
+
+        <!---==================== about ---------------->
+        <header class="header-section"><h4>Welcome</h4></header>
+        <!-- <hr class="special-hr"> -->
+
+        <!--==================== intro ================-->
+        <article class="intro">
+            <h4> {{introduction}} </h4>
         </article>
-        <article>
-          <header>Industry</header>
+        <!--================== end intro ================-->
+
+
+        <!--==================== educaiton ==============-->
+        <article class="education">
+          <header><h3>Education</h3></header>
+          <div id="tableEducation">
+          </div>
+        </article>
+        <!--==================== end education ==================-->
+
+        <!--======================= industry ==============-->
+        <article class="industry">
+          <header><h3>Industry</h3></header>
+          <dl id="tableIndustry">
+          </dl>
+        </article>
+        </div>
+        <!--==================== end industry ===============-->
+      </section>
+      <!--=================== end about =================-->
+
+      <hr class="regular-hr">
+      <!--===================== project ================-->
+      <section class="project">
+        <header class="header-section"><h4>Project</h4> </header>
+        <article class="project-list">
         </article>
       </section>
-      <section>
-        <header> Project </header>
-        <article class="">
-          <header>Gigz</header>
-        </article>
+      <!--==================== end project ===============-->
+      <hr class="regular-hr">
+
+      <!--===================== contact -=================-->
+      <section class="contact">
+        <header class="header-section"><h4>Contact</h4></header>
+        <!-- <hr class="special-hr"> -->
+        <h4>Leave a Message!</h4>
+        <form class="" action="index.html" method="post">
+          <div class="">
+            <label for="name">Name:</label>
+            <input id="name" type="text" name="name" placeholder="Name*"/>
+          </div>
+          <div class="">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Email*"/>
+
+          </div>
+
+          <div class="">
+            <label for="message">Message:</label>
+            <textarea name="message" id="message" placeholder="Message*" rows="8" cols="80"></textarea>
+          </div>
+
+
+
+        </form>
       </section>
-      <section>
-        <header>Constact Info</header>
-      </section>
-      <p>main</p>
+      <!--=================== end contact ======================-->
+
     </main>
+
+    <!--=============== end main =======================-->
+
+
+      <!--============== footer ===========-->
     <footer>
-      <p>footer</p>
+      <div class="">
+        <a href="#">Email</a>
+        <a href="#">LinkedIn</a>
+        <a href="#">Github</a>
+      </div>
+
+      <small>&copy; Edward Huang</small>
     </footer>
+    <!--============== end footer =============-->
 
   </body>
+
+
+  <script id="listTemplate" src="./templates/listTemplate.hbs" type="text/x-handlebars-template">
+    <ul>
+      {{#each projects}}
+        <li><a href="{{link}}" target="_blank"><img src="{{img}}" alt="{{name}}">{{name}}</a></li>
+      {{/each}}
+    </ul>
+  </script>
+  <script id="tableTemplate" src="./templates/tableTemplate.js" type="text/x-handlebars-template">
+    <!-- <tbody> -->
+      {{#dls}}
+      <dl class="descrition-list pure-g">
+        <dt class="pure-u-lg-2-5 pure-u-md-3-5 pure-u-sm-1-1"><p class="title">{{{key}}}</p>
+        <p class="year">{{{year}}}</p></dt>
+        <dd class="pure-u-lg-3-5 pure-u-md-2-5 pure-u-sm-1-1"><h4 class="value">{{{value}}}</h4></dd>
+      </dl>
+      {{/dls}}
+    <!-- </tbody> -->
+  </script>
+  <script src="./lib/zepto.min.js" type="text/javascript"></script>
+
+  <script src="./js/main.js" type="text/javascript"></script>
+
 </html>
