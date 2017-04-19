@@ -66,35 +66,67 @@
 
     <main>
       <section class="about">
-        <div class="about-container">
+        <!-- <div class="about-container"> -->
 
 
         <!---==================== about ---------------->
-        <header class="header-section"><h4>Welcome</h4></header>
+        <header class="header-section">
+          <div class="bottom-border special">
+            <h4>Welcome!</h4>
+          </div>
+
+
+        </header>
+
+        <article class="intro">
+            <div class="intro-wrapper">
+              <div class="intro-image">
+                <img src="./image/fff.png" class="profile-image" alt="Edward's Image">
+              </div>
+              <div class="intro-paragraph">
+                <p>
+                 {{{introduction}}}
+                </p>
+              </div>
+            </div>
+        </article>
         <!-- <hr class="special-hr"> -->
 
         <!--==================== intro ================-->
-        <article class="intro">
-            <h4> {{introduction}} </h4>
-        </article>
+
+
         <!--================== end intro ================-->
 
 
         <!--==================== educaiton ==============-->
-        <article class="education">
-          <header><h3>Education</h3></header>
-          <div id="tableEducation">
-          </div>
-        </article>
-        <!--==================== end education ==================-->
+        <article class="showcase-list">
+          <!-- <article class="showcase"> -->
+            <div class="showcase-item pure-g">
+              <div class="show-image pure-u-lg-1-2 pure-u-md-1-2 pure-u-sm-1-1">
+                <img src="./image/fff.png" alt="education">
+              </div>
+              <!-- <header><h3>Education</h3></header> -->
 
-        <!--======================= industry ==============-->
-        <article class="industry">
-          <header><h3>Industry</h3></header>
-          <dl id="tableIndustry">
-          </dl>
+              <div id="tableEducation" class="pure-u-lg-1-2 pure-u-md-1-2 pure-u-sm-1-1">
+              </div>
+            </div>
+          <!-- </article> -->
+          <!--==================== end education ==================-->
+
+          <!--======================= industry ==============-->
+          <!-- <article class="showcase"> -->
+            <!-- <header><h3>Industry</h3></header> -->
+            <div class="showcase-item pure-g">
+              <div class="show-image pure-u-1-2">
+                <img src="./image/fff.png" alt="education">
+              </div>
+              <div id="tableIndustry" class="pure-u-1-2">
+              </div>
+            </div>
+          <!-- </article> -->
+
         </article>
-        </div>
+
         <!--==================== end industry ===============-->
       </section>
       <!--=================== end about =================-->
@@ -102,7 +134,11 @@
       <hr class="regular-hr">
       <!--===================== project ================-->
       <section class="project">
-        <header class="header-section"><h4>Project</h4> </header>
+        <header class="header-section">
+            <div class="bottom-border">
+              <h4>Project</h4>
+            </div>
+        </header>
         <article class="project-list">
         </article>
       </section>
@@ -111,32 +147,30 @@
 
       <!--===================== contact -=================-->
       <section class="contact">
-        <header class="header-section"><h4>Contact</h4></header>
+        <header class="header-section">
+          <div class="bottom-border">
+            <h4>Contact</h4>
+          </div>
+        </header>
         <!-- <hr class="special-hr"> -->
-        <h4>Leave a Message!</h4>
-        <form class="" action="index.html" method="post">
-          <div class="">
-            <label for="name">Name:</label>
-            <input id="name" type="text" name="name" placeholder="Name*"/>
-          </div>
-          <div class="">
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" placeholder="Email*"/>
 
-          </div>
+        <form class="pure-form form" action="index.html" method="post">
+          <h4>Leave a Message!</h4>
+          <fieldset class="pure-group">
+              <input id="name" class="pure-input-1-2" type="text" name="name" placeholder="Name*" required/>
+              <input type="email" class="pure-input-1-2" id="email" name="email" placeholder="Email*" required/>
+            </fieldset>
 
-          <div class="">
-            <label for="message">Message:</label>
-            <textarea name="message" id="message" placeholder="Message*" rows="8" cols="80"></textarea>
-          </div>
-
-
-
+            <fieldset class="pure-group">
+              <textarea name="message" id="message" placeholder="Message*" rows="8" cols="80"></textarea>
+            </fieldset>
         </form>
       </section>
       <!--=================== end contact ======================-->
 
     </main>
+
+    <hr class="regular-hr">
 
     <!--=============== end main =======================-->
 
@@ -163,16 +197,31 @@
       {{/each}}
     </ul>
   </script>
+
   <script id="tableTemplate" src="./templates/tableTemplate.js" type="text/x-handlebars-template">
-    <!-- <tbody> -->
-      {{#dls}}
-      <dl class="descrition-list pure-g">
-        <dt class="pure-u-lg-2-5 pure-u-md-3-5 pure-u-sm-1-1"><p class="title">{{{key}}}</p>
-        <p class="year">{{{year}}}</p></dt>
-        <dd class="pure-u-lg-3-5 pure-u-md-2-5 pure-u-sm-1-1"><h4 class="value">{{{value}}}</h4></dd>
-      </dl>
-      {{/dls}}
-    <!-- </tbody> -->
+    <table class="table-content">
+      <thead>
+        <th> <h3 class="table-title"> {{title}}<h3> </th>
+      </thead>
+
+    <tbody>
+      {{#trs}}
+      <tr class="description-list">
+        <td class="title"> <p>{{{key}}}</p></td>
+        <td class="value"><p>{{{value}}}<span class="year">{{{year}}}</span></p></td>
+      </tr>
+      <!-- <dl class="description-list pure-g">
+        <dt class="pure-u-lg-1-2 pure-u-md-1-2 pure-u-sm-1-1">
+          <p class="title">{{{key}}}</p>
+        </dt>
+        <dd class="pure-u-lg-1-2 pure-u-md-1-2 pure-u-sm-1-1">
+          <p class="year">{{{value}}} {{{year}}}</p>
+        </dd>
+      </dl> -->
+      {{/trs}}
+    </tbody>
+
+  </table>
   </script>
   <script src="./lib/zepto.min.js" type="text/javascript"></script>
 

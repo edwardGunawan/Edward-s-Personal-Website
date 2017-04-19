@@ -2,7 +2,7 @@ window.onload= function(){
 
   /* initializing all the elments in the fornt_page.js */
   var location = $('#location').html();
-  var h4_aboutPage = $('.intro h4').html();
+  var p_aboutPage = $('.intro p').html();
   var table = $('#tableTemplate').html();
   var projectList = $('#listTemplate').html();
   console.log(table);
@@ -14,23 +14,26 @@ window.onload= function(){
   };
 
   var intro = {
-    introduction: ' I\'m Edward Huang, an undergraduate students at UC San Diego. \
-     I enjoy exercising, travelling, and reading books. I also enjoy designing and building, \
-     clean and well-crafted software.'
+    introduction: ' I\'m Edward Huang from UC San Diego. <br>\
+     I love to exercise, travel, read books. <br>\
+     and design and build, \
+     clean and <br><span>well-crafted<span> software.'
   }
 
   var educationContent ={
-    dls:[
+    title:"Education",
+    trs:[
       {key:'UC San Diego', year:' ', value:'B.S Computer Science'},
-      {key:'Antic. Graduation', year:' ', value:'December 2017'}
+      {key:'Antic. <br>Graduation', year:' ', value:'December 2017'}
     ]
   };
 
   var industryContent = {
-    dls:[
-      {key:'IBM', year:'Spring 2017', value:'Software Engineer Intern'},
-      {key:'Mesh.edu', year:'(09/16-03/17)',value:'Software Developer'},
-      {key:'Chen Lab BioNanomaterials', year:'(06/16 - 12/16)', value:'Software Developer'}
+    title:"Industry",
+    trs:[
+      {key:'IBM', year:' <br>(Spring 2017)', value:'Software Engineer Intern'},
+      {key:'Mesh.edu', year:' <br>(09/16 - 03/17)',value:'Software Developer'},
+      {key:'Chen Lab <br>BioNanomaterials', year:' <br>(06/16 - 12/16)', value:'Software Developer'}
     ]
   };
 
@@ -47,7 +50,7 @@ window.onload= function(){
   /* rendering the template */
 
   renderTemplate(location, h5_frontPageLocation,'#location');
-  renderTemplate(h4_aboutPage,intro,'.intro h4');
+  renderTemplate(p_aboutPage,intro,'.intro p');
   renderTemplate(table,educationContent,'#tableEducation');
   renderTemplate(table,industryContent,'#tableIndustry');
   renderTemplate(projectList,projectContent,'.project-list');
