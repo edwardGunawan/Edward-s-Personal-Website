@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="author" content="Edward Huang">
+    <meta name="description" content="Edward Huang Personal Website">
+    <meta name="keyword" content="website, computer science, html, css, Edward Huang, Edward, Gunawan,
+    UCSD, development, software engineer, Software developer, IBM">
+    <!-- good onall device -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="robots" content=" inde">
+
+    <!-- in facebook -->
+    <meta name="og:image" content="myImage"> <!-- todo -->
+    <meta name="og:description" content="Personal Website">
+    <meta name="og:title" content="Edward Huang">
+    <meta name="twitter:title" content="Edward Huang">
+
+    <!-- for favicon in ms -->
+    <meta name="msapplication-TileImage" content="myImage"> <!-- todo -->
+    <meta name="maspplication-TileColor" content=""> <!-- todo -->
+
+    <!-- what to mention in http header -->
+    <meta http-equiv="content-type" content="text/html">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" media="screen">
+    <link rel="short icon" href="/css/master.css" type="image/x-icon"> <!-- adding icon -->
+    <link rel="stylesheet" href="./lib/pure-release-0.6.2/pure-min.css" media="screen">
+    <link rel="stylesheet" href="./style/stylesheet-practice.css" media="screen">
+
+    <script src="./lib/handlebars-v4.0.5.js" charset="utf-8"></script>
+
+
+    <title>Edward Huang</title>
+  </head>
+
+
+  <body>
+    <!--================ front page ===================-->
+    <section class="main-page">
+      <article class="front-page">
+        <header class="intro-container">
+          <h1 class="intro-pre">Hello,</h1>
+          <h3 class="intro-main">My name is <span id="name">Edward Huang<span>,
+            a software engineer who loves to build and design <span id="things">things</span></h3>
+          <h5 id="location">San Diego, California</h5>
+        </header>
+
+        <nav class="nav pure-menu-list pure-menu-horizontal">
+          <ul class="pure-menu-list">
+            <li class="pure-menu-item"><a href="#Email" class="pure-menu-link" target="_blank">Email</a></li>
+            <li class="pure-menu-item"><a href="#LinkedIn" class="pure-menu-link" target="_blank"> LinkedIn</a></li>
+            <li class="pure-menu-item"><a href="#Resume" class="pure-menu-link" target="_blank"> Resume </a></li>
+          </ul>
+        </nav>
+      </article>
+    </section>
+
+
+    <main>
+
+      <section class="about">
+        <header class="header-section">
+          <div class="bottom-border special">
+            <h4>Welcome!</h4>
+          </div>
+        </header>
+
+        <article class="showcase introduction-showcase">
+              <div class="showcase-item">
+                <img src="./image/fff.png" class="intro-image" alt="Edward's Image">
+              </div>
+              <div class="description-item" id="introduction">
+                <p>
+                  I\'m Edward Huang from UC San Diego.
+                   I love to exercise, travel, read books.
+                   and design and build,
+                   clean and
+                   <span id="specialKeyword">well-crafted<span> software.
+                </p>
+              </div>
+        </article>
+
+        <article class="showcase-list">
+          <article class="showcase" style="">
+              <div  class="showcase-item">
+                <img src="./image/fff.png" class="showcaselist-image" alt="education">
+              </div>
+              <div id="tableEducation" class="description-item">
+                <h3 class="title">Education</h3>
+                <table class="content">
+                  <tbody>
+                    <tr>
+                      <td>UC San Diego</td>
+                      <td>B.S. Computer Science</td>
+                    </tr>
+                    <tr>
+                      <td>Antic. Graduation</td>
+                      <td>December 2017</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+          </article>
+          <!--==================== end education ==================-->
+
+          <!--======================= industry ==============-->
+          <article class="showcase">
+              <div class="showcase-item">
+                <img src="./image/fff.png" class="showcaselist-image" alt="education">
+              </div>
+              <div id="tableIndustry" class="description-item">
+                <h3 class="title">Industry</h3>
+                <table class="content">
+                  <tbody>
+                    <tr>
+                      <td>IBM</td>
+                      <td>Software Engineer (Spring)</td>
+                    </tr>
+                    <tr>
+                      <td>Mesh</td>
+                      <td>Software Developer (09/16 - 03/17)</td>
+                    </tr>
+                    <tr>
+                      <td>Chen Lab BioNanomaterials</td>
+                      <td>Software Developer (06/16 - 12/16)</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+          </article>
+
+        </article>
+
+        <!--==================== end industry ===============-->
+      </section>
+      <!--=================== end about =================-->
+
+      <!--===================== project ================-->
+      <section class="project" style="">
+        <header class="header-section">
+            <div class="bottom-border">
+              <h4>Project</h4>
+            </div>
+        </header>
+        <article class="project-list">
+          <ul>
+            <li>
+              <a href="#" class="img-wrap"><img src="./image/fff.png" class="project-img" alt="">
+                <p class="project-description">Portfolio</p>
+              </a>
+
+            </li>
+            <li>
+                <a href="#" class="img-wrap"><img src="./image/fff.png" class="project-img" alt="">
+                  <p class="project-description">Gigz</p>
+                </a>
+            </li>
+            <li>
+              <a href="#" class="img-wrap"><img src="./image/fff.png" class="project-img" alt="">
+                <p class="project-description">TrackMe</p>
+              </a>
+            </li>
+          </ul>
+        </article>
+      </section>
+      <!--==================== end project ===============-->
+
+      <!--===================== contact -=================-->
+      <section class="contact">
+        <header class="header-section">
+          <div class="bottom-border">
+            <h4>Contact</h4>
+          </div>
+        </header>
+        <!-- <hr class="special-hr"> -->
+
+        <form class="pure-form form" action="index.html" method="post">
+          <h4>Leave a Message!</h4>
+          <fieldset class="name-email pure-group">
+              <input id="name" class="" type="text" name="name" placeholder="Name*" required/>
+              <input type="email" class="" id="email" name="email" placeholder="Email*" required/>
+            </fieldset>
+
+            <fieldset class="message pure-group">
+              <textarea name="message" class="pure-input-1-2" placeholder="Message*" rows="8" cols="80"></textarea>
+            </fieldset>
+            <div class="submit-button">
+              <input type="submit" name="submit" class="pure-button" value="Submit!">
+            </div>
+
+        </form>
+      </section>
+      <!--=================== end contact ======================-->
+
+    </main>
+
+
+    <!--=============== end main =======================-->
+
+
+      <!--============== footer ===========-->
+    <footer>
+      <div class="footer-links">
+        <a href="#"><i class="fa fa-envelope fa-2x" aria-hidden="true"></i></a>
+        <a href="#"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a>
+        <a href="#"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a>
+      </div>
+      <div class="copyright">
+        <small>&copy; Edward Huang</small>
+      <div>
+    </footer>
+    <!--============== end footer =============-->
+
+  </body>
+
+  <script src="./lib/zepto.min.js" type="text/javascript"></script>
+
+  <script src="./js/main.js" type="text/javascript"></script>
+
+</html>
