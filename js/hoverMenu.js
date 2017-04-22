@@ -36,7 +36,7 @@ $(window).on('load',function(){
   function changeText(){
 
     var ct = $('#things').data('term') || 0;
-    console.log(terms.eq([ct]).text());
+    // console.log(terms.eq([ct]).text());
     $('#things').data('term', ct == terms.length-1 ? 0: ct+1)
     .text(terms.eq([ct]).text())
     .fadeIn().delay(2000).fadeOut(200,changeText);

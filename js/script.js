@@ -11,7 +11,7 @@ $(window).on('load',function(){
 
     var min = 0.1;
     var max = 0.9;
-    var threshold = 0.01;
+    var threshold = 0.04;
 
     $(".fade").each(function(){
       $element = $(this);
@@ -26,16 +26,16 @@ $(window).on('load',function(){
       /* If the element is completely within bounds of the window, fade it in */
       // console.log('objet bottom is : '+ objectBottom + " window_bottom_position is :" + window_bottom_position);
       if(objectBottom < window_bottom_position){ // object comes into view (scrolling down)
-        if($(this).css('opacity') < min+threshold || pageLoad){$(this).fadeTo(300,max);}
+        if($(this).css('opacity') < (min+threshold || pageLoad)){$(this).fadeTo(300,max);}
       }else {  // object goes out of view (scrolling up)
-        if($(this).css('opacity') >= max-threshold || pageLoad){$(this).fadeTo(300,min);}
+        if($(this).css('opacity') >= (max-threshold || pageLoad)){$(this).fadeTo(100,min);}
       }
     });
   }
 
 
     fade(true); //fade element on pageLoad
-    $(window).scroll(function(){fade(false);});  // fade elements on scroll
+    $(window).scroll(function(){fade(true);});  // fade elements on scroll
 
 
 
