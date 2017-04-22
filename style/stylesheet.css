@@ -43,7 +43,8 @@ body {
   max-width:860px;
   margin:0 auto;
   padding: 0 20px;
-  line-height:1.2
+  line-height:1.2;
+  position: relative;
 }
 
 /* introduction of yourself */
@@ -178,6 +179,17 @@ thead .table-title{
 .year{
   font-size: 13px;
   color: #8b8682;
+}
+
+
+/* ------- try something out ------ */
+.outer {
+  width:72%;
+  margin:0 auto;
+}
+
+.inner {
+  margin:0 0 50px;
 }
 
 

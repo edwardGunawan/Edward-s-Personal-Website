@@ -24,9 +24,11 @@
     <meta http-equiv="content-type" content="text/html">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
 
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" media="screen">
     <link rel="short icon" href="/css/master.css" type="image/x-icon"> <!-- adding icon -->
     <link rel="stylesheet" href="./lib/pure-release-0.6.2/pure-min.css" media="screen">
+    <!-- <link rel="stylesheet" href="./style/forms-nr.css" media="screen"> -->
     <link rel="stylesheet" href="./style/stylesheet-practice.css" media="screen">
 
     <script src="./lib/handlebars-v4.0.5.js" charset="utf-8"></script>
@@ -39,11 +41,11 @@
   <body>
     <!--================ front page ===================-->
     <section class="main-page">
-      <article class="front-page">
-        <header class="intro-container">
-          <h1 class="intro-pre">Hello,</h1>
-          <h3 class="intro-main">My name is <span id="name">Edward Huang<span>,
-            a software engineer who loves to build and design <span id="things">things</span></h3>
+      <article class="front-page ">
+        <header class="intro-container fade">
+          <h2 class="intro-pre">Hello,</h2>
+          <h1 class="intro-main">My name is <span id="name">Edward Huang<span>,
+            a software engineer who loves to build and<span id="things"> design things</span></h1>
           <h5 id="location">San Diego, California</h5>
         </header>
 
@@ -61,13 +63,13 @@
     <main>
 
       <section class="about">
-        <header class="header-section">
+        <header class="header-section fade">
           <div class="bottom-border special">
             <h4>Welcome!</h4>
           </div>
         </header>
 
-        <article class="showcase introduction-showcase">
+        <article class="showcase introduction-showcase fade">
               <div class="showcase-item">
                 <img src="./image/fff.png" class="intro-image" alt="Edward's Image">
               </div>
@@ -82,8 +84,8 @@
               </div>
         </article>
 
-        <article class="showcase-list">
-          <article class="showcase" style="">
+        <article class="showcase-list ">
+          <article class="showcase fade" style="">
               <div  class="showcase-item">
                 <img src="./image/fff.png" class="showcaselist-image" alt="education">
               </div>
@@ -92,11 +94,11 @@
                 <table class="content">
                   <tbody>
                     <tr>
-                      <td>UC San Diego</td>
+                      <td class="item-name">UC San Diego</td>
                       <td>B.S. Computer Science</td>
                     </tr>
                     <tr>
-                      <td>Antic. Graduation</td>
+                      <td class="item-name">Antic. Graduation</td>
                       <td>December 2017</td>
                     </tr>
                   </tbody>
@@ -106,7 +108,7 @@
           <!--==================== end education ==================-->
 
           <!--======================= industry ==============-->
-          <article class="showcase">
+          <article class="showcase fade">
               <div class="showcase-item">
                 <img src="./image/fff.png" class="showcaselist-image" alt="education">
               </div>
@@ -115,15 +117,15 @@
                 <table class="content">
                   <tbody>
                     <tr>
-                      <td>IBM</td>
+                      <td class="item-name">IBM</td>
                       <td>Software Engineer (Spring)</td>
                     </tr>
                     <tr>
-                      <td>Mesh</td>
+                      <td class="item-name">Mesh</td>
                       <td>Software Developer (09/16 - 03/17)</td>
                     </tr>
                     <tr>
-                      <td>Chen Lab BioNanomaterials</td>
+                      <td class="item-name">Chen Lab BioNanomaterials</td>
                       <td>Software Developer (06/16 - 12/16)</td>
                     </tr>
                   </tbody>
@@ -138,26 +140,26 @@
       <!--=================== end about =================-->
 
       <!--===================== project ================-->
-      <section class="project" style="">
-        <header class="header-section">
+      <section class="project">
+        <header class="header-section fade">
             <div class="bottom-border">
               <h4>Project</h4>
             </div>
         </header>
         <article class="project-list">
           <ul>
-            <li>
+            <li class="fade">
               <a href="#" class="img-wrap"><img src="./image/fff.png" class="project-img" alt="">
                 <p class="project-description">Portfolio</p>
               </a>
 
             </li>
-            <li>
+            <li class="fade">
                 <a href="#" class="img-wrap"><img src="./image/fff.png" class="project-img" alt="">
                   <p class="project-description">Gigz</p>
                 </a>
             </li>
-            <li>
+            <li class="fade">
               <a href="#" class="img-wrap"><img src="./image/fff.png" class="project-img" alt="">
                 <p class="project-description">TrackMe</p>
               </a>
@@ -170,20 +172,20 @@
       <!--===================== contact -=================-->
       <section class="contact">
         <header class="header-section">
-          <div class="bottom-border">
+          <div class="bottom-border fade">
             <h4>Contact</h4>
           </div>
         </header>
         <!-- <hr class="special-hr"> -->
 
-        <form class="pure-form form" action="index.html" method="post">
+        <form class="pure-form form " action="index.html" method="post">
           <h4>Leave a Message!</h4>
-          <fieldset class="name-email pure-group">
+          <fieldset class="name-email pure-group fade">
               <input id="name" class="" type="text" name="name" placeholder="Name*" required/>
               <input type="email" class="" id="email" name="email" placeholder="Email*" required/>
             </fieldset>
 
-            <fieldset class="message pure-group">
+            <fieldset class="message pure-group fade">
               <textarea name="message" class="pure-input-1-2" placeholder="Message*" rows="8" cols="80"></textarea>
             </fieldset>
             <div class="submit-button">
@@ -215,8 +217,15 @@
 
   </body>
 
-  <script src="./lib/zepto.min.js" type="text/javascript"></script>
+  <script
+  src="https://code.jquery.com/jquery-2.2.4.min.js"
+  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+  crossorigin="anonymous"></script>
+  <!-- <script src="./lib/zepto.min.js" type="text/javascript"></script> -->
+  <!-- <script src="./lib/velocity.min.js" type="text/javascript"></script> -->
 
-  <script src="./js/main.js" type="text/javascript"></script>
+  <!-- <script src="./js/main.js" type="text/javascript"></script> -->
+  <script src="./js/script.js" type="text/javascript"></script>
+  <script src="./js/hoverMenu.js" type="text/javascript"></script>
 
 </html>

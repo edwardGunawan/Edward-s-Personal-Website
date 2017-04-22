@@ -1,4 +1,4 @@
-window.onload= function(){
+$(window).on('load',function(){
 
   /* initializing all the elments in the fornt_page.js */
   var location = $('#location').html();
@@ -83,6 +83,7 @@ window.onload= function(){
 
 
 
+
   function renderTemplate(elementToGet,  objContent, elementToRender){
     var compiled_template = Handlebars.compile(elementToGet);
     var content = objContent;
@@ -93,4 +94,4 @@ window.onload= function(){
 
 
 
-}
+});
