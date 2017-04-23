@@ -59,6 +59,55 @@ body {
 }
 
 
+/* ----------- footer ------------- */
+#emailHover{
+  display:inline-block;
+  width:24px ;
+  height:29px ;
+  background:url("../image/email-outline.svg") no-repeat ;
+  /*border: 1px solid #0f1626;*/
+  /*border-radius:100%;*/
+}
+
+#emailHover:hover{
+  background:url("../image/email-outline.png") no-repeat ;
+  width:24px;
+  height:29px;
+  background-color: #0f1626;
+  border: 1px solid #cdc9c9:
+}
+
+#githubHover{
+  display:inline-block;
+  width:24px ;
+   height:29px ;
+   background:url("../image/github-circle.svg") no-repeat ;
+}
+
+#githubHover:hover{
+  background:url("../image/github-circle.png") no-repeat ;
+  width:24px;
+  height:29px;
+  /*border-radius:100%;*/
+  background-color: #0f1626;
+  border: 1px solid #cdc9c9:
+}
+#linkedInHover{
+  display:inline-block;
+  width:24px ;
+  height:29px ;
+  background:url("../image/linkedin.svg") no-repeat ;
+}
+
+#linkedInHover:hover{
+  background:url("../image/linkedin.png") no-repeat ;
+  width:24px;
+  height:29px;
+  background-color: #0f1626;
+  border: 1px solid #cdc9c9:
+}
+
+
 
 
 
@@ -634,19 +683,9 @@ td{
 .submit-button{
   width:86.25px;
   margin:auto;
+  background-color: white;
 }
 
-.footer-links{
-  width:50%;
-  margin:auto;
-  text-align: center;
-}
 
-.copyright{
-  text-align: center;
-}
-footer small {
-  font-size:20px;
-}
 
 }
