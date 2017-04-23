@@ -55,35 +55,6 @@ $(window).on('load',function(){
   renderTemplate(table,industryContent,'#tableIndustry');
   renderTemplate(projectList,projectContent,'.project-list');
 
-
-  /* Welcome Page */
-
-
-
-
-
-  /* Education */
-
-
-
-
-  /* Industry */
-
-
-
-
-
-  /* Project */
-
-
-
-
-
-
-
-
-
-
   function renderTemplate(elementToGet,  objContent, elementToRender){
     var compiled_template = Handlebars.compile(elementToGet);
     var content = objContent;
