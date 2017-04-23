@@ -2,10 +2,10 @@ $(window).on('load',function(){
 
   /* initializing all the elments in the fornt_page.js */
   var location = $('#location').html();
-  var p_aboutPage = $('.intro p').html();
+  var p_aboutPage = $('#introduction p').html();
   var table = $('#tableTemplate').html();
-  var projectList = $('#listTemplate').html();
-  console.log(table);
+  // var projectList = $('#listTemplate').html();
+  // console.log(table);
 
 
   /* All the content */
@@ -14,26 +14,26 @@ $(window).on('load',function(){
   };
 
   var intro = {
-    introduction: ' I\'m Edward Huang from UC San Diego. <br>\
-     I love to exercise, travel, read books. <br>\
-     and design and build, \
-     clean and <br><span>well-crafted<span> software.'
+    introduction: ' I\'m Edward Huang from UC San Diego.\
+     I love to exercise, travel, read books.\
+     and design and build, clean and\
+     <span id="specialKeyword">wellCrafted</span> software.'
   }
 
   var educationContent ={
     title:"Education",
     trs:[
-      {key:'UC San Diego', year:' ', value:'B.S Computer Science'},
-      {key:'Antic. <br>Graduation', year:' ', value:'December 2017'}
+      {key:'UC San Diego', value:'B.S Computer Science'},
+      {key:'Antic. Graduation', value:'December 2017'}
     ]
   };
 
   var industryContent = {
     title:"Industry",
     trs:[
-      {key:'IBM', year:' <br>(Spring 2017)', value:'Software Engineer Intern'},
-      {key:'Mesh.edu', year:' <br>(09/16 - 03/17)',value:'Software Developer'},
-      {key:'Chen Lab <br>BioNanomaterials', year:' <br>(06/16 - 12/16)', value:'Software Developer'}
+      {key:'IBM', value:'Software Engineer Intern (Spring 17)'},
+      {key:'Mesh.edu',value:'Software Developer (09/16 - 03/17)'},
+      {key:'Chen Lab BioNanomaterials', value:'Software Developer (06/16 - 12/16)'}
     ]
   };
 
@@ -50,10 +50,10 @@ $(window).on('load',function(){
   /* rendering the template */
 
   renderTemplate(location, h5_frontPageLocation,'#location');
-  renderTemplate(p_aboutPage,intro,'.intro p');
+  renderTemplate(p_aboutPage,intro,'#introduction p');
   renderTemplate(table,educationContent,'#tableEducation');
   renderTemplate(table,industryContent,'#tableIndustry');
-  renderTemplate(projectList,projectContent,'.project-list');
+  // renderTemplate(projectList,projectContent,'.project-list');
 
 
   /* Welcome Page */

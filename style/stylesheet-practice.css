@@ -432,7 +432,7 @@ footer small {
     clear:both;
   }
 
-  #firstImageChild{
+  .project-list .first-image-child{
     margin:5% 20% 0;
   }
 
