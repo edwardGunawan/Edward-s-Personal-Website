@@ -4,7 +4,7 @@ $(window).on('load',function(){
   var location = $('#location').html();
   var p_aboutPage = $('#introduction p').html();
   var table = $('#tableTemplate').html();
-  // var projectList = $('#listTemplate').html();
+  var projectList = $('#listTemplate').html();
   // console.log(table);
 
 
@@ -39,9 +39,9 @@ $(window).on('load',function(){
 
   var projectContent ={
     projects:[
-      { link:'#', name:'TrackMe', img:'src'},
-      { link:'#', name:'Edward\'s Portfolio', img:'src'},
-      { link:'#', name:'Gigz', img:'src'}
+      { link:'#', name:'Portfolio', img:'./image/Portfolio.jpg', class:'fade first-image-child'},
+      { link:'#', name:'ReactTimerApp', img:'./image/ReactTimerApp.png', class:'fade last-two-image'},
+      { link:'#', name:'TrackMe', img:'./image/TrackMeResize.png', class:'fade last-two-image'}
     ]
   };
 
@@ -53,7 +53,7 @@ $(window).on('load',function(){
   renderTemplate(p_aboutPage,intro,'#introduction p');
   renderTemplate(table,educationContent,'#tableEducation');
   renderTemplate(table,industryContent,'#tableIndustry');
-  // renderTemplate(projectList,projectContent,'.project-list');
+  renderTemplate(projectList,projectContent,'.project-list');
 
 
   /* Welcome Page */

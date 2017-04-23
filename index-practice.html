@@ -144,7 +144,7 @@
             </div>
         </header>
         <article class="project-list">
-          <ul>
+          <!-- <ul>
             <li class="fade first-image-child">
               <a href="#" class="img-wrap"><img src="./image/Portfolio.jpg" class="project-img" alt="">
                 <span class="project-description">Portfolio</span>
@@ -161,7 +161,7 @@
                 <span class="project-description">TrackMe</span>
               </a>
             </li>
-          </ul>
+          </ul> -->
         </article>
       </section>
       <!--==================== end project ===============-->
@@ -226,6 +226,8 @@
   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
   crossorigin="anonymous"></script>
 
+
+  <!-- script for table template -->
   <script type="text/x-handlebars-template" id="tableTemplate">
       <h3 class="title">{{{title}}}</h3>
       <table class="content">
@@ -238,6 +240,21 @@
           {{/trs}}
         </tbody>
       </table>
+  </script>
+
+  <!-- script for unorder list template -->
+  <script type="text/x-handlebars-template" id="listTemplate">
+    <ul>
+      {{#projects}}
+      <li class="{{class}}">
+        <a href="{{link}}" class="img-wrap"><img src="{{img}}" class="project-img" alt="{{name}}">
+          <span class="project-description">{{name}}</span>
+        </a>
+
+      </li>
+      {{/projects}}
+    </ul>
+
   </script>
   <script src="./js/main.js" type="text/javascript"></script>
   <script src="./js/script.js" type="text/javascript"></script>
