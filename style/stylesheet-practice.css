@@ -540,7 +540,7 @@ td{
 }
 
 .pure-form .message{
-  width:500px;
+  width:639.5px;
   margin: auto;
 }
 
@@ -549,9 +549,9 @@ td{
   height:200px;
 }
 
-.form .name-email{
-  width:118px;
-  margin:auto;
+.form .name-email input{
+  width:100%;
+
 }
 .contact{
   border-bottom: 2px solid #cdc9c9;
@@ -560,7 +560,8 @@ td{
 
 
 .submit-button{
-  width:86.25px;
+  width:71.95px;
+  /*width:100%;*/
   margin:auto;
   background-color: white;
 }
