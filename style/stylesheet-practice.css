@@ -1,3 +1,12 @@
+/*
+color reference
+black ish: #0f1626
+maroon ish: #b7531b
+grayish color: #cdc9c9
+*/
+
+
+
 body {
   background: #ece9e6; /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #ece9e6, #ffffff); /* Chrome 10-25, Safari 5.1-6 */
@@ -24,6 +33,12 @@ body {
   text-transform: uppercase;
   letter-spacing: 4px;
   font-size: 100%;
+}
+
+#specialKeyword{
+  color: #b7531b;
+  font-weight:bold;
+  text-transform: uppercase;
 }
 
 
@@ -63,7 +78,7 @@ body {
 
 
   .header-section{
-    height:1%;
+    /*height:1%;*/
     text-align: center;
     font-size:20px;
   }
@@ -129,30 +144,107 @@ body {
 
 
   /* ---------- Project -------------- */
+
+  .project, .project-list, .project-list ul, .project-list li{
+    margin:0;
+    padding:0;
+  }
+
+  .project{
+    display:table;
+    overflow:hidden;
+  }
+
+  .proejct-list ul{
+    line-height:0;
+    -webkit-column-count: 2;
+  -webkit-column-gap:   0px;
+  -moz-column-count:    2;
+  -moz-column-gap:      0px;
+  column-count:         2;
+  column-gap:           0 px;
+  }
+
+  .project-list li {
+    width: 80%;
+    /*height:20%;*/
+    line-height: 0;
+    margin:0 auto 0 auto;
+  }
   .project-img{
-    width:100%;
-    height:100%;
+    display:inline-block;
+    width:100% !important;
+    height:auto !important;
     opacity: 1.0;
-    filter: alpha(opcaity=100); /* for IE8 and earlier */
+    overflow:hidden;
+    /*box-shadow:0 0 1px 0.5px #787878;*/
+    vertical-align:top;
+    filter: alpha(opacity=100); /* for IE8 and earlier */
   }
 
 
-  .img-wrap:hover{
-    opacity:0.5;
-    filter: alpha(opcaity=50); /* for IE8 and earlier */
-    transition: opacity 0.2s ease-in 0s;
+
+  .img-wrap {
+    display:inline-block;
+    background: black;
+    overflow:hidden;
+    /*width:100%;*/
+    /*height:100%;*/
+    padding: 0;
+    position:relative;
   }
 
-  .img-wrap:hover .project-description{
-    visibility: visible;
-    color:white;
-    transition: opacity 0.4s ease-in 0s;
+   .img-wrap .project-img{
+    display: block;
+
+   -webkit-transition: all 0.2s linear;
+      -moz-transition: all 0.2s linear;
+       -ms-transition: all 0.2s linear;
+        -o-transition: all 0.2s linear;
+           transition: all 0.2s linear;
   }
+
+   .img-wrap:hover img{
+    opacity:0.3;
+  }
+
+   .img-wrap .project-description{
+    visibility:hidden;
+    font-size:16px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    line-height: 100%;
+  }
+
+   .img-wrap:hover .project-description{
+    color:#fff;
+    visibility:visible;
+    -webkit-transition: all 0.2s linear;
+       -moz-transition: all 0.2s linear;
+        -ms-transition: all 0.2s linear;
+         -o-transition: all 0.2s linear;
+            transition: all 0.2s linear;
+  }
+
+  /*.img-wrap:hover{
+    opacity:0.5;*/
+    /*filter: alpha(opacity=50); /* for IE8 and earlier */
+    /*transition: opacity 0.2s ease-in 0s;*/
+  /*}*/
+
+  /*.img-wrap:hover .project-description{*/
+    /*visibility: visible;*/
+    /*transition: opacity 0.4s ease-in 0s;*/
+    /*color:white;*/
+  /*}*/
 
   @media only screen and (max-width:768px){
-    ul {
+    /*ul {
       margin:20% auto;
-    }
+    }*/
     .pure-menu-item{
       width:30%;
       margin-right:1%;
@@ -166,28 +258,31 @@ body {
     }
   }
 
+
+
   li{
     list-style-type: none;
     position:relative;
-    height:125px;
-    width:125px;
-    margin:10% 25%;
+    /*height:125px;*/
+    /*width:125px;*/
+    /*margin:10% 25%;*/
   }
 
-  li p {
-    visibility:hidden;
+  /*li span {
     position:absolute;
+    display:none;
     color:white;
     width:150px;
     height:50%;
-    margin-top:50%;
-    top:0px;
+    background-color: rgba(0,0,0,0.6);*/
+    /*margin-top:50%;*/
+    /*top:0px;
     bottom:0px;
     left:0px;
     right:0px;
     text-align: center;
     z-index:3;
-  }
+  }*/
 
   .project{
     border-bottom:2px solid #cdc9c9;
@@ -311,33 +406,57 @@ body {
   }
 
   /*-------- project ------- */
-  .img-wrap .project-img{
+  /*.img-wrap .project-img{
     width:100%;
     height:100%;
-    opacity: 1.0;
+    border:2px solid #787878;*/
+    /*box-shadow:0 0 1px 0.5px #787878;*/
+    /*opacity: 1.0;
     filter: alpha(opcaity=100); /* for IE8 and earlier */
+  /*}*/
+  .project-list ul li{
+    display:inline-block;
+    width:60%;
+    position:relative;
+    clear:both;
+    /*margin:10% 0;*/
   }
 
+  #firstImageChild{
+    margin:5% 20% 0;
+  }
 
-  .project-list li{
+  .project-list .last-two-image{
+    width:30%;
+  }
+
+  .project-list .last-two-image:nth-of-type(2){
+    margin-left:20%;
+  }
+  .project-list .last-two-image:nth-last-of-type(3){
+    margin:0;
+    height:187px;
+  }
+
+  /*.project-list li{
     list-style-type: none;
+    background-color:#0f1626;
     position:relative;
     height:200px;
     float:left;
     width:200px;
-
-
     margin:10% 6% 0;
-  }
+  }*/
   @media only screen and (min-width:1224px){
-    .project-list li{
+    /*.project-list li{
       list-style-type: none;
+      background-color:#0f1626;
       position:relative;
       height:200px;
       float:left;
       width:200px;
       margin:10% 8% 0;
-    }
+    }*/
     #introduction{
       font-size:20px;
     }
@@ -359,7 +478,7 @@ body {
     }
   }
 
-  .project-list li p {
+  /*.project-list li p {
     visibility:hidden;
     position:absolute;
     color:white;
@@ -372,7 +491,7 @@ body {
     right:0px;
     text-align: center;
     z-index:3;
-  }
+  }*/
 }
 
 .showcase{
@@ -427,29 +546,33 @@ td{
 }
 /* -------- Project ----------- */
 
-.project-img{
+/*.project-img{
   width:100%;
   height:100%;
   opacity: 1.0;
-  filter: alpha(opcaity=100); /* for IE8 and earlier
-}
+  border:2px solid #787878;*/
+  /*box-shadow:0 0 1px 0.5px #787878*/
+  /*filter: alpha(opacity=100); // for IE8 and earlier
+}*/
 
 
-.img-wrap:hover{*/
+/*.img-wrap:hover{
   opacity:0.5;
-  filter: alpha(opcaity=50); /* for IE8 and earlier */
-  transition: opacity 0.2s ease-in 0s;
-}
+  filter: alpha(opacity=50); /* for IE8 and earlier */
+  /*transition: opacity 0.2s ease-in 0s;
+}*/
 
-.img-wrap:hover .project-description{
+
+/*.img-wrap:hover .project-description{
   visibility: visible;
-  color:white;
+  color: white;
   transition: opacity 0.4s ease-in 0s;
-}
+}*/
 
 
 
-li{
+
+/*li{
   list-style-type: none;
   position:relative;
   height:150px;
@@ -457,9 +580,9 @@ li{
   width:150px;
   margin:10% 25%;
   margin:15% 5% 0;
-}
+}*/
 
-li p {
+/*li p {
   visibility:hidden;
   position:absolute;
   color:white;
@@ -472,7 +595,7 @@ li p {
   right:0px;
   text-align: center;
   z-index:3;
-}
+}*/
 
 .project{
   border-bottom:2px solid #cdc9c9;

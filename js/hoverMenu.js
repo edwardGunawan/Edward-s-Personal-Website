@@ -3,12 +3,6 @@ $(window).on('load',function(){
   console.log($menu);
   var color=['#ec407a','#7e57c2','#66bb6a','#ff7043','#afb42b', '#bdbdbd', '#a1887f','#aed581','#26c6da'];
   var count = 0;
-  var textArray = [
-    'Things',
-    'taht things',
-    'those things'
-  ];
-  var countText = 0;
   var terms = $('#renderThings li');
 
   function menuMouseOver($elemnt){
