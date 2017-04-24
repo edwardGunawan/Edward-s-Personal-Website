@@ -16,8 +16,8 @@ $(window).on('load',function(){
   var intro = {
     introduction: ' I\'m Edward Huang from UC San Diego.\
      I love to exercise, travel, read books;\
-     and design and build, clean and\
-     <span id="specialKeyword">wellCrafted</span> software.'
+    and design clean, \
+     <span id="specialKeyword">wellCrafted</span>, software.'
   }
 
   var educationContent ={
