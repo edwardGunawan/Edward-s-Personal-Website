@@ -15,7 +15,7 @@ $(window).on('load',function(){
 
   var intro = {
     introduction: ' I\'m Edward Huang from UC San Diego.\
-     I love to exercise, travel, read books.\
+     I love to exercise, travel, read books;\
      and design and build, clean and\
      <span id="specialKeyword">wellCrafted</span> software.'
   }
@@ -23,7 +23,7 @@ $(window).on('load',function(){
   var educationContent ={
     title:"Education",
     trs:[
-      {key:'UC San Diego', value:'B.S Computer Science'},
+      {key:'UC San Diego', value:'B.S. Computer Science'},
       {key:'Antic. Graduation', value:'December 2017'}
     ]
   };
@@ -39,9 +39,9 @@ $(window).on('load',function(){
 
   var projectContent ={
     projects:[
-      { link:'#', name:'Portfolio', img:'./image/Portfolio.jpg', class:'fade first-image-child'},
-      { link:'http://react-timer-app-gunawan.herokuapp.com/#/?_k=vfeyg7', name:'ReactTimerApp', img:'./image/ReactTimerApp.png', class:'fade last-two-image'},
-      { link:'http://trackme-gunawan.herokuapp.com/#/?_k=i05q8p', name:'TrackMe', img:'./image/TrackMeResize.png', class:'fade last-two-image'}
+      { link:'#', name:'Portfolio', target:'', img:'./image/Portfolio.jpg', class:'fade first-image-child'},
+      { link:'http://react-timer-app-gunawan.herokuapp.com/#/?_k=vfeyg7', target:'_blank', name:'ReactTimerApp', img:'./image/ReactTimerApp.png', class:'fade last-two-image'},
+      { link:'http://trackme-gunawan.herokuapp.com/#/?_k=i05q8p', target:'_blank', name:'TrackMe', img:'./image/TrackMeResize.png', class:'fade last-two-image'}
     ]
   };
 
