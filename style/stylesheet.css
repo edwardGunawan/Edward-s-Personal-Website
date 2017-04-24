@@ -42,21 +42,6 @@ body {
   text-transform: uppercase;
 }
 
-/* the size of iphone 5 - iphone 6plus changing the introduction tag */
-  /*@media only screen (min-width:320px) and (max-width:414px){
-
-    .introMain{
-      font-size:1rem;
-    }
-  }*/
-
-  /* the size of iphone 6 to 8 plus for the front page */
-  @media only screen and (min-width:375px) and (max-width:768px){
-    .intro-container{
-      padding:150px 0 30px;
-    }
-  }
-
 
 
 @media (min-width: 640px){
@@ -321,6 +306,7 @@ footer small {
       margin-right:1%;
     }
 
+    /* lower the font size for iphone 5,6,6plus for the front page */
     .intro-main{
       font-size:1.5rem;
 
@@ -329,8 +315,6 @@ footer small {
     .intro-container{
       padding:150px 0 30px;
     }
-
-
 
 
 
