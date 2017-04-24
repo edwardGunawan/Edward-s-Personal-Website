@@ -40,8 +40,8 @@ $(window).on('load',function(){
   var projectContent ={
     projects:[
       { link:'#', name:'Portfolio', img:'./image/Portfolio.jpg', class:'fade first-image-child'},
-      { link:'#', name:'ReactTimerApp', img:'./image/ReactTimerApp.png', class:'fade last-two-image'},
-      { link:'#', name:'TrackMe', img:'./image/TrackMeResize.png', class:'fade last-two-image'}
+      { link:'http://react-timer-app-gunawan.herokuapp.com/#/?_k=vfeyg7', name:'ReactTimerApp', img:'./image/ReactTimerApp.png', class:'fade last-two-image'},
+      { link:'http://trackme-gunawan.herokuapp.com/#/?_k=i05q8p', name:'TrackMe', img:'./image/TrackMeResize.png', class:'fade last-two-image'}
     ]
   };
 
