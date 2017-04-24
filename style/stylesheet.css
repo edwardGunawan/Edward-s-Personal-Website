@@ -306,9 +306,7 @@ footer small {
 
   /* front page specifically for iphone 5 */
   @media only screen and (max-width:414px){
-    .intro-container{
-      padding:50px 0 30px;
-    }
+
   }
 
 
@@ -321,6 +319,15 @@ footer small {
     .pure-menu-item{
       width:30%;
       margin-right:1%;
+    }
+
+    .intro-main{
+      font-size:1.5rem;
+
+    }
+
+    .intro-container{
+      padding:150px 0 30px;
     }
 
 
