@@ -42,6 +42,21 @@ body {
   text-transform: uppercase;
 }
 
+/* the size of iphone 5 - iphone 6plus changing the introduction tag */
+  /*@media only screen (min-width:320px) and (max-width:414px){
+
+    .introMain{
+      font-size:1rem;
+    }
+  }*/
+
+  /* the size of iphone 6 to 8 plus for the front page */
+  @media only screen and (min-width:375px) and (max-width:768px){
+    .intro-container{
+      padding:150px 0 30px;
+    }
+  }
+
 
 
 @media (min-width: 640px){
@@ -136,7 +151,7 @@ footer small {
 
 
 /*------------------ Smartphones (landscape) ----------- */
-@media only screen and (min-width : 319px) {
+@media only screen and (min-width : 320px) {
   /* Styles */
 
 
@@ -289,6 +304,15 @@ footer small {
             transition: all 0.2s linear;
   }
 
+  /* front page specifically for iphone 5 */
+  @media only screen and (max-width:414px){
+    .intro-container{
+      padding:50px 0 30px;
+    }
+  }
+
+
+
 
   @media only screen and (max-width:768px){
     /*ul {
@@ -299,9 +323,9 @@ footer small {
       margin-right:1%;
     }
 
-    .intro-container{
-      padding:90px 0 30px;
-    }
+
+
+
 
     .introduction-showcase .showcase-item{
       margin-top:5%;
@@ -352,8 +376,6 @@ footer small {
     margin:auto;
     width:86.25px;
   }
-
-
 
 }
 
