@@ -1,0 +1,65 @@
+@media only screen and (min-width:1000px){
+  .showcase-list .showcase-item{
+    margin-right:0;
+    margin-left:20px;
+  }
+
+  .showcase-list .showcase{
+    width:60%;
+  }
+
+  #tableEducation{
+    padding-left:30px;
+    margin-left:0;
+  }
+
+  #tableEducation .content{
+    margin-left:0;
+  }
+
+  /*-------- project ------- */
+  .project-list ul li{
+    display:inline-block;
+    width:60%;
+    position:relative;
+    clear:both;
+  }
+
+  .project-list .first-image-child{
+    margin:5% 20% 0;
+  }
+
+  .project-list .last-two-image{
+    width:30%;
+    height:187px;
+  }
+
+  .project-list .last-two-image:nth-of-type(2){
+    margin-left:20%;
+  }
+  .project-list .last-two-image:nth-last-of-type(3){
+    margin:0;
+    height:187px;
+  }
+}
+
+
+  @media only screen and (min-width:1224px){
+    #introduction{
+      font-size:20px;
+    }
+
+    .description-item{
+      font-size:16px;
+      padding:0;
+    }
+
+    .showcase-list .showcase {
+      margin: 0 auto;
+    }
+
+    .content .item-name{
+      width:40%;
+      padding:0;
+    }
+  }
