@@ -1,4 +1,4 @@
 # Edward-s-Personal-Website
-This is my personal website portfolio
+#####This is my personal website portfolio
 <br>
-***View page*** http://edwardhuang1.me/
+***View page : [Edward's Porfolio] (http://edwardhuang1.me/) ***
