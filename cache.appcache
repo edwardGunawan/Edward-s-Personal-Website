@@ -1,4 +1,5 @@
 CACHE MANIFEST
+CACHE:
 /image/compressed/career-min.png
 /image/compressed/education-min.png
 /image/compressed/Edward-profile-pic-min.jpg
@@ -9,3 +10,9 @@ CACHE MANIFEST
 /image/compressed/ReactTimerApp-min.png
 /image/compressed/TrackMeResize-min.png
 /image/EdwardResume.pdf
+
+NETWORK:
+/lib/handlebars-v4.0.5.js
+/js/script-production.min.js
+/image/linkedin.svg
+/style/stylesheet-production.min.css
