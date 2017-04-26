@@ -1,13 +1,18 @@
 CACHE MANIFEST
 /image/compressed/career-min.png
 /image/compressed/education-min.png
-/image/compressed/Edward-profile-pic-min.png
+/image/compressed/Edward-profile-pic-min.jpg
 /image/compressed/email-outline-min.png
 /image/compressed/github-circle-min.png
 /image/compressed/Portfolio.min.jpg
 /image/compressed/profile-pic-min.png
 /image/compressed/ReactTimerApp-min.png
 /image/compressed/TrackMeResize-min.png
+/image/linkedin.png
+/image/linkedin.svg
+/image/github-circle.svg
+/image/favicon.ico
+/image/EdwardResume.pdf
 /js/script-production.min.js
 /js/modernizr.js
 /lib/pure-min.css
