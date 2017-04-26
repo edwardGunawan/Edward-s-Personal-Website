@@ -13,7 +13,5 @@ CACHE MANIFEST
 /image/github-circle.svg
 /image/favicon.ico
 /image/EdwardResume.pdf
-/js/script-production.min.js
-/js/modernizr.js
 /lib/pure-min.css
 /style/stylesheet-production.min.css
