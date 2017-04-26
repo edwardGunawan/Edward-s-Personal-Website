@@ -1,5 +1,110 @@
-<!DOCTYPE html><html lang=en manifest=cache.appcache><meta charset=utf-8><meta content="Edward Huang"name=author><meta content="Edward Huang Personal Website"name=description><meta content="website, computer science, html, css, Edward Huang, Edward, Gunawan,
-    UCSD, development, software engineer, Software developer, IBM"name=keyword><meta content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"name=viewport><meta content="noindex, nofollow"name=robots><meta content=./image/Edward-profile-pic.jpg name=og:image><meta content="Personal Website"name=og:description><meta content="Edward Huang"name=og:title><meta content="Edward Huang"name=twitter:title><meta content=./image/Edward-profile-pic.jpg name=msapplication-TileImage><meta content=#ece9e6 name=maspplication-TileColor><meta content=text/html http-equiv=content-type><meta content="IE=Edge"http-equiv=X-UA-Compatible><link href="https://fonts.googleapis.com/css?family=Roboto"rel=stylesheet><link href=./image/favicon.ico rel="short icon"type=image/x-icon><link href=./lib/pure-min.css rel=stylesheet media=screen><link href=./style/stylesheet-production.min.css rel=stylesheet><script src=./js/modernizr.js></script><script src=./lib/handlebars-v4.0.5.js charset=utf-8></script><noscript><h1 style=text-align:center>For full functionality of this page it is necessary to enable JavaScript. Here are the <a href=http://www.enable-javascript.com target=_blank>instructions how to enable JavaScript in your web browser</a></h1></noscript><title>Edward Huang</title><section class=main-page><article class=front-page><header class="fade intro-container"><h2 class=intro-pre>Hello,</h2><h1 class=intro-main>My name is <span id=name>Edward Huang<span>, a software engineer who loves to build and<span id=things style=padding-left:6px></span></h1><h5 id=location>{{location}}</h5></header><nav class="pure-menu-list nav pure-menu-horizontal"><ul class=pure-menu-list><li class=pure-menu-item><a href=mailto:edwardgunawan880@yahoo.com class=pure-menu-link>Email</a><li class=pure-menu-item><a href=https://www.linkedin.com/in/edward-huang/ target=_blank class=pure-menu-link>LinkedIn</a><li class=pure-menu-item><a href=./image/EdwardResume.pdf target=_blank class=pure-menu-link>Resume</a></ul></nav></article></section><main><section class=about><header class="fade header-section"><div class="bottom-border special"><h4>Welcome!</h4></div></header><article class="fade showcase introduction-showcase"><div class=showcase-item><img alt="Edward's Image"class=intro-image src=./image/compressed/profile-pic-min.jpg></div><div class=description-item id=introduction><p>{{{introduction}}}</div></article><article class=showcase-list><article class="fade showcase"><div class=showcase-item><img alt=education class=showcaselist-image src=./image/compressed/education-min.png></div><div class=description-item id=tableEducation></div></article><article class="fade showcase"><div class=showcase-item><img alt=education class=showcaselist-image src=./image/compressed/career-min.png></div><div class=description-item id=tableIndustry></div></article></article></section><section class=project><header class="fade header-section"><div class=bottom-border><h4>Project</h4></div></header><article class=project-list></article></section><section class=contact><header class=header-section><div class="fade bottom-border"><h4>Contact</h4></div></header><form action=https://formspree.io/edwardgunawan880@yahoo.com class="form pure-form"method=post><h4>Leave a Message!</h4><fieldset class="fade pure-group name-email"><input name=name id=name placeholder=Name* required> <input name=__replyto id=email placeholder=Email* required type=email></fieldset><fieldset class="fade pure-group message"><textarea class=pure-input-1-2 cols=80 name=body placeholder=Message* rows=8></textarea></fieldset><div class=submit-button><input name=submit type=submit class=pure-button value=Send!></div></form></section></main><footer><div class=footer-links><a href=mailto:edwardgunawan880@yahoo.com id=emailHover></a> <a href=https://github.com/edwardGunawan/ target=_blank id=githubHover></a> <a href=https://www.linkedin.com/in/edward-huang target=_blank id=linkedInHover></a></div><div class=copyright><small>© Edward Huang</small><div></footer><ul id=renderThings style=display:none><li>cooking<li>travel<li>read books<li>drink coffee<li>go swimming</ul><script src=./lib/jquery-3.2.1.min.js></script><script id=tableTemplate type=text/x-handlebars-template><h3 class="title">{{{title}}}</h3>
+<!DOCTYPE html>
+<html lang=en manifest="cache.appcache">
+<meta charset=utf-8>
+<meta content="Edward Huang" name=author>
+<meta content="Edward Huang Personal Website" name=description>
+<meta content="website, computer science, html, css, Edward Huang, Edward, Gunawan,
+    UCSD, development, software engineer, Software developer, IBM" name=keyword>
+<meta content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" name=viewport>
+<meta content="noindex, nofollow" name=robots>
+<meta content=http://edwardhuang1.me/image/Edward-profile-pic.jpg name=og:image>
+<meta content="Personal Website" name=og:description>
+<meta content="Edward Huang" name=og:title>
+<meta content="Edward Huang" name=twitter:title>
+<meta content=http://edwardhuang1.me/image/Edward-profile-pic.jpg name=msapplication-TileImage>
+<meta content=#ece9e6 name=maspplication-TileColor>
+<meta content=text/html http-equiv=content-type>
+<meta content="IE=Edge" http-equiv=X-UA-Compatible>
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel=stylesheet>
+<link href=./image/favicon.ico rel="short icon" type=image/x-icon>
+<link href=./lib/pure-min.css rel=stylesheet media=screen>
+<link href=./style/stylesheet-production.min.css rel=stylesheet>
+<script src=./js/modernizr.js></script>
+<script src=./lib/handlebars-v4.0.5.js charset=utf-8></script>
+<noscript>
+    <h1 style=text-align:center>For full functionality of this page it is necessary to enable JavaScript. Here are the <a href=http://www.enable-javascript.com target=_blank>instructions how to enable JavaScript in your web browser</a></h1></noscript>
+<title>Edward Huang</title>
+<section class=main-page>
+    <article class=front-page>
+        <header class="fade intro-container">
+            <h2 class=intro-pre>Hello,</h2>
+            <h1 class=intro-main>My name is <span id=name>Edward Huang<span>, a software engineer who loves to build and<span id=things style=padding-left:6px></span></h1>
+            <h5 id=location>{{location}}</h5></header>
+        <nav class="pure-menu-list nav pure-menu-horizontal">
+            <ul class=pure-menu-list>
+                <li class=pure-menu-item><a href=mailto:edwardgunawan880@yahoo.com class=pure-menu-link>Email</a>
+                    <li class=pure-menu-item><a href=https://www.linkedin.com/in/edward-huang/ target=_blank class=pure-menu-link>LinkedIn</a>
+                        <li class=pure-menu-item><a href=./image/EdwardResume.pdf target=_blank class=pure-menu-link>Resume</a></ul>
+        </nav>
+    </article>
+</section>
+<main>
+    <section class=about>
+        <header class="fade header-section">
+            <div class="bottom-border special">
+                <h4>Welcome!</h4></div>
+        </header>
+        <article class="fade showcase introduction-showcase">
+            <div class=showcase-item><img alt="Edward's Image" class=intro-image src=./image/compressed/profile-pic-min.jpg></div>
+            <div class=description-item id=introduction>
+                <p>{{{introduction}}}</div>
+        </article>
+        <article class=showcase-list>
+            <article class="fade showcase">
+                <div class=showcase-item><img alt=education class=showcaselist-image src=./image/compressed/education-min.png></div>
+                <div class=description-item id=tableEducation></div>
+            </article>
+            <article class="fade showcase">
+                <div class=showcase-item><img alt=education class=showcaselist-image src=./image/compressed/career-min.png></div>
+                <div class=description-item id=tableIndustry></div>
+            </article>
+        </article>
+    </section>
+    <section class=project>
+        <header class="fade header-section">
+            <div class=bottom-border>
+                <h4>Project</h4></div>
+        </header>
+        <article class=project-list></article>
+    </section>
+    <section class=contact>
+        <header class=header-section>
+            <div class="fade bottom-border">
+                <h4>Contact</h4></div>
+        </header>
+        <form action=https://formspree.io/edwardgunawan880@yahoo.com class="form pure-form" method=post>
+            <h4>Leave a Message!</h4>
+            <fieldset class="fade pure-group name-email">
+                <input name=name id=name placeholder=Name* required>
+                <input name=__replyto id=email placeholder=Email* required type=email>
+            </fieldset>
+            <fieldset class="fade pure-group message">
+                <textarea class=pure-input-1-2 cols=80 name=body placeholder=Message* rows=8></textarea>
+            </fieldset>
+            <div class=submit-button>
+                <input name=submit type=submit class=pure-button value=Send!>
+            </div>
+        </form>
+    </section>
+</main>
+<footer>
+    <div class=footer-links>
+        <a href=mailto:edwardgunawan880@yahoo.com id=emailHover></a>
+        <a href=https://github.com/edwardGunawan/ target=_blank id=githubHover></a>
+        <a href=https://www.linkedin.com/in/edward-huang target=_blank id=linkedInHover></a>
+    </div>
+    <div class=copyright><small>© Edward Huang</small>
+        <div>
+</footer>
+<ul id=renderThings style=display:none>
+    <li>cooking
+        <li>travel
+            <li>read books
+                <li>drink coffee
+                    <li>go swimming</ul>
+<script src=./lib/jquery-3.2.1.min.js></script>
+<script id=tableTemplate type=text/x-handlebars-template>
+    <h3 class="title">{{{title}}}</h3>
     <table class="content">
         <tbody>
             {{#trs}}
@@ -9,7 +114,10 @@
             </tr>
             {{/trs}}
         </tbody>
-    </table></script><script id=listTemplate type=text/x-handlebars-template><ul>
+    </table>
+</script>
+<script id=listTemplate type=text/x-handlebars-template>
+    <ul>
         {{#projects}}
         <li class="{{class}}">
             <a href="{{link}}" target="{{target}}" class="img-wrap"><img src="{{img}}" class="project-img" alt="{{name}}">
@@ -17,4 +125,14 @@
             </a>
         </li>
         {{/projects}}
-    </ul></script><script src=./js/script-production.min.js></script><script>!function(e,t,a,n,c,o,s){e.GoogleAnalyticsObject=c,e[c]=e[c]||function(){(e[c].q=e[c].q||[]).push(arguments)},e[c].l=1*new Date,o=t.createElement(a),s=t.getElementsByTagName(a)[0],o.async=1,o.src="https://www.google-analytics.com/analytics.js",s.parentNode.insertBefore(o,s)}(window,document,"script",0,"ga"),ga("create","UA-97945254-1","auto"),ga("send","pageview")</script><script src=https://www.google-analytics.com/analytics.js async></script>
+    </ul>
+</script>
+<script src=./js/script-production.min.js></script>
+<script>
+    ! function(e, t, a, n, c, o, s) {
+        e.GoogleAnalyticsObject = c, e[c] = e[c] || function() {
+            (e[c].q = e[c].q || []).push(arguments)
+        }, e[c].l = 1 * new Date, o = t.createElement(a), s = t.getElementsByTagName(a)[0], o.async = 1, o.src = "https://www.google-analytics.com/analytics.js", s.parentNode.insertBefore(o, s)
+    }(window, document, "script", 0, "ga"), ga("create", "UA-97945254-1", "auto"), ga("send", "pageview")
+</script>
+<script src=https://www.google-analytics.com/analytics.js async></script>

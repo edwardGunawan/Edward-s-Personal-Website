@@ -9,3 +9,6 @@ CACHE MANIFEST
 /image/compressed/ReactTimerApp-min.png
 /image/compressed/TrackMeResize-min.png
 /js/script-production.min.js
+/js/modernizr.js
+/lib/pure-min.css
+/style/stylesheet-production.min.css
