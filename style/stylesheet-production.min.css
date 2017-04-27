@@ -412,7 +412,7 @@ footer small {
   display: inline-block;
 }
 
-  @media only screen and (min-width:1000px) and (max-width:1350px){
+  @media only screen and (min-width:1000px){
     .showcase-list .showcase-item{
       margin-right:0;
       margin-left:20px;
