@@ -56,13 +56,13 @@ body {
 /* when using something less than an Ipad tablet */
 @media (min-width: 640px){
   /* two different typed of rendering but just leave it as it is */
-  /*.intro-main {
+  .intro-main {
     font-size: 2.2rem;
     max-width:80%;
     line-height:1.2;
     font-weight:bold;
     margin: 10px 0 20px;
-  }*/
+  }
 
   header.intro-container.fade{
     padding:200px 0 30px;
@@ -76,7 +76,7 @@ body {
   display:inline-block;
   width:24px ;
   height:29px ;
-  background:url("../image/email-outline.svg") no-repeat ;
+  background:url("http://edwardhuang1.me/image/compressed/email-outline-black-min.png") no-repeat ;
 }
 
 /*
@@ -85,7 +85,7 @@ body {
   image when hover
 */
 #emailHover:hover{
-  background:url("../image/email-outline.png") no-repeat ;
+  background:url("http://edwardhuang1.me/image/compressed/email-outline-min.png") no-repeat ;
   width:24px;
   height:29px;
   background-color: #0f1626;
@@ -96,11 +96,11 @@ body {
   display:inline-block;
   width:24px ;
    height:29px ;
-   background:url("../image/github-circle.svg") no-repeat ;
+   background:url("http://edwardhuang1.me/image/compressed/github-circle-black-min.png") no-repeat ;
 }
 
 #githubHover:hover{
-  background:url("../image/github-circle.png") no-repeat ;
+  background:url("http://edwardhuang1.me/image/compressed/github-circle-min.png") no-repeat ;
   width:24px;
   height:29px;
   /*border-radius:100%;*/
@@ -111,11 +111,11 @@ body {
   display:inline-block;
   width:24px ;
   height:29px ;
-  background:url("../image/linkedin.svg") no-repeat ;
+  background:url("http://edwardhuang1.me/image/compressed/linkedin-black-min.png") no-repeat ;
 }
 
 #linkedInHover:hover{
-  background:url("../image/linkedin.png") no-repeat ;
+  background:url("http://edwardhuang1.me/image/compressed/linkedin-white-min.png") no-repeat ;
   width:24px;
   height:29px;
   background-color: #0f1626;
@@ -412,7 +412,7 @@ footer small {
   display: inline-block;
 }
 
-  @media only screen and (min-width:1000px){
+  @media only screen and (min-width:1000px) and (max-width:1350px){
     .showcase-list .showcase-item{
       margin-right:0;
       margin-left:20px;

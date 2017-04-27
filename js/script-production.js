@@ -44,9 +44,9 @@ $(window).on('load',function(){
 
   var projectContent ={
     projects:[
-      { link:'#', name:'Portfolio', target:'', img:'./image/Portfolio.jpg', class:'fade first-image-child'},
-      { link:'http://react-timer-app-gunawan.herokuapp.com/#/?_k=vfeyg7', target:'_blank', name:'ReactTimerApp', img:'./image/ReactTimerApp.png', class:'fade last-two-image'},
-      { link:'http://trackme-gunawan.herokuapp.com/#/?_k=i05q8p', target:'_blank', name:'TrackMe', img:'./image/TrackMeResize.png', class:'fade last-two-image'}
+      { link:'#', name:'Portfolio', target:'', img:'http://edwardhuang1.me/image/compressed/Portfolio.min.jpg', class:'fade first-image-child'},
+      { link:'http://react-timer-app-gunawan.herokuapp.com/#/?_k=vfeyg7', target:'_blank', name:'ReactTimerApp', img:'http://edwardhuang1.me/image/compressed/ReactTimerApp-min.png', class:'fade last-two-image'},
+      { link:'http://trackme-gunawan.herokuapp.com/#/?_k=i05q8p', target:'_blank', name:'TrackMe', img:'http://edwardhuang1.me/image/compressed/TrackMeResize-min.png', class:'fade last-two-image'}
     ]
   };
 

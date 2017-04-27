@@ -10,6 +10,12 @@ Optimization important tips:
 * js external file using async
 * where you put the script file is important, depending on where it is, JS manipulate CSS and HTML so it will wait until it finished, technically you want to put it in the end
     * understanding the optimized rendering path between JS CSS and HTML
+* Dont use manifest at all, it won't work, use service worker
+* or caching using meta data to cache-control <META HTTP-EQUIV="CACHE-CONTROL" CONTENT="NO-CACHE">
+* copyright: <META HTTP-EQUIV="CONTENT-TYPE"
+CONTENT="text/html; charset=UTF-8">
+* Avoid page redirect, to improve site performance, because it will add a single roundtrip (HTTP request-response)
+
 
 Why using Favicon?
 * for branding on a company
