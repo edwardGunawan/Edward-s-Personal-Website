@@ -15,7 +15,8 @@ Optimization important tips:
 * copyright: <META HTTP-EQUIV="CONTENT-TYPE"
 CONTENT="text/html; charset=UTF-8">
 * Avoid page redirect, to improve site performance, because it will add a single roundtrip (HTTP request-response)
-
+* Using magickimage of convert can decrease the image size and compressed it
+* getting image to render slower will be putting query string of ?t=12345?
 
 Why using Favicon?
 * for branding on a company
