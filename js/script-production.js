@@ -36,7 +36,8 @@ $(window).on('load',function(){
   var industryContent = {
     title:"Industry",
     trs:[
-      {key:'IBM', value:'Software Engineer Intern (Spring 17)'},
+      {key:'Macy\'s.com', value:'Software Engineer Intern (Summer 17)'},
+      {key:'IBM', value:'Software Engineer Intern (04/17 - 06/17)'},
       {key:'Mesh.edu',value:'Software Developer (09/16 - 03/17)'},
       {key:'Chen Lab BioNanomaterials', value:'Software Developer (06/16 - 12/16)'}
     ]
