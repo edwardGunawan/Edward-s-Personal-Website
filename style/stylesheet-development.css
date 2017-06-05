@@ -385,12 +385,15 @@ footer small {
   padding-right:20px
 }
 
+/*----------- about page --------------- */
 .about{
   border-bottom:1px solid #cdc9c9;
   height:100vh;
   width:100%;
+  /*max-width:1278px;*/
   display:table;
 }
+
 
 .header-section{
   height:1%;
@@ -408,15 +411,60 @@ footer small {
   width:60%;
 }
 
-/* --------------- header (intro) section ------------ */
+/* --------------- header (intro) section of about page ------------ */
 .showcase{
-  /*display:table;*/
+  display:table;
+  height:20%;
+  width:70%;
 }
+/* the introduction section words in the about page */
 #introduction{
+  font-size:20px;
   float:left;
   margin-left:30%;
+  max-width:400px;
 }
+
+.introduction-showcase{
+  margin-left:20%;
+}
+
+.intro-image {
+  height:150px;
+  width:150px;
+  border-radius:100%;
+
+}
+/* the image on the about page on the left */
+.showcaselist-image{
+  height:120px;
+  width:120px;
+  border-radius:100%
+  box-shadow: 0 0 2px 0.5px #787878;
+  background-color: #fafafa;
+}
+
+/* --------------- education and industry section in about page ---------- */
+
+/* the table for the education and the industry */
+  /* title of the table */
+  .title{
+    text-align: left;
+    margin:0 auto;
+    padding-left:6px;
+    border-left:4px solid #b7531b;
+    border-bottom:none;
+    width:auto;
+  }
+  /* the content of the table */
+  .content{
+    margin:2% 0; /* margin to be 0 on the left and right so that it will be align with the title */
+  }
+  td{
+    /*width:100%;*/
+  }
 /* ----------industry section------------- */
+/* the image on the left side of the about page */
 .showcase-item{
   height:100%;
   /*width: 100%;*/
@@ -426,19 +474,26 @@ footer small {
   float:left;
   /*display:table;*/
 }
-
+/* the table on the right side of the about page */
 .description-item{
   /*display:table;*/
   /*position:relative;*/
   float:right;
   /*margin-left:40%;*/
   /*clear:both;*/
+  /*height:50%;*/
+  width:75%;
+  /*padding-left:30%;*/
+  vertical-align: middle;
+  letter-spacing: 1px;
+  margin:10px auto 60px 30px;
 }
 
 .clear {
   clear:both;
 }
 
+  /* still inside of mid-width: 768 px section */
   @media only screen and (min-width:1000px){
     .showcase-list .showcase-item{
       margin-right:0;
@@ -446,16 +501,13 @@ footer small {
     }
 
     .showcase-list .showcase{
-      width:60%;
+      max-width:60%;
+      display:table; /* to make it not overlap with the introduction image */
     }
 
     #tableEducation{
-      padding-left:30px;
-      margin-left:0;
-    }
-
-    #tableEducation .content{
-      margin-left:0;
+      /*padding-left:30px;*/
+      /*margin-left:0;*/
     }
 
     /*-------- project ------- */
@@ -486,7 +538,7 @@ footer small {
 
     @media only screen and (min-width:1224px){
       #introduction{
-        font-size:20px;
+        /*font-size:20px;*/
       }
 
       .description-item{
@@ -496,6 +548,7 @@ footer small {
 
       .showcase-list .showcase {
         margin: 0 auto;
+        display:table; /* to solve the education image to not overlap with profile image */
       }
 
       .content .item-name{
@@ -503,64 +556,18 @@ footer small {
         padding:0;
       }
 
+
       /* My Image Introduction margin to be center on the web screen */
       .intro-image{
         margin-left:50px;
       }
     }
   }
+/*--------- end here ----------- */
 
-  .showcase{
-    height:30%;
-    width:70%;
-  }
+/* the div for the introduction in the about page */
 
-  .intro-image {
-    height:150px;
-    width:150px;
-    border-radius:100%;
 
-  }
-  .showcaselist-image{
-    height:120px;
-    width:120px;
-    border-radius:100%
-    box-shadow: 0 0 2px 0.5px #787878;
-    background-color: #fafafa;
-  }
-
-  .description-item{
-    height:50%;
-    width:70%;
-    display: inline-block;
-    vertical-align: top;
-    letter-spacing: 1px;
-    margin:10px auto 60px 30px;
-  }
-
-  #introduction {
-    max-width:400px;
-  }
-
-  .introduction-showcase{
-    margin-left:20%;
-  }
-
-  .title{
-    text-align: left;
-    margin:0 auto;
-    padding-left:6px;
-    border-left:4px solid #b7531b;
-    border-bottom:none;
-    width:auto;
-  }
-
-  .content{
-    margin:2% auto;
-  }
-  td{
-    width:50%;
-  }
   /* -------- Project ----------- */
 
   .project{
