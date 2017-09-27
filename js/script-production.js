@@ -29,14 +29,14 @@ $(window).on('load',function(){
     title:"Education",
     trs:[
       {key:'UC San Diego', value:'B.S. Computer Science'},
-      {key:'Antic. Graduation', value:'December 2017'}
+      {key:'Antic. Graduation', value:'Spring 2017'}
     ]
   };
 
   var industryContent = {
     title:"Industry",
     trs:[
-      {key:'Macy\'s.com', value:'Software Engineer Intern (Summer 17)'},
+      {key:'Macy\'s Tech', value:'Software Engineer Intern (06/17 - 08/17)'},
       {key:'IBM', value:'Software Engineer Intern (04/17 - 06/17)'},
       {key:'Mesh.edu',value:'Software Developer (09/16 - 03/17)'},
       {key:'Chen Lab BioNanomaterials', value:'Software Developer (06/16 - 12/16)'}
