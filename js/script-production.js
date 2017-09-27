@@ -29,7 +29,7 @@ $(window).on('load',function(){
     title:"Education",
     trs:[
       {key:'UC San Diego', value:'B.S. Computer Science'},
-      {key:'Antic. Graduation', value:'Spring 2017'}
+      {key:'Antic. Graduation', value:'Spring 2018'}
     ]
   };
 
