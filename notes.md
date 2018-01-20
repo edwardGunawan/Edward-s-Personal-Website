@@ -4,6 +4,34 @@ CSS important tips:
 * 80 pixels relative to the top when using top
 * to not make the image to overlap: using display table on the outer layer, and overflow hidden
 * image resizing: using width:100% and height :auto
+* wrap text around image is to use image as the float property, not the text
+* If having flex display property on the parent container, the child float will
+be override and it won't work
+* shape-outside: New CSS property that changes the shape of the items that are wrap
+full notation: circle(r at cx cy) on the image
+* webkit is for Safari engine
+
+- When to use padding, margin:
+  - [link](http://headwaythemes.com/margins-padding-borders/)
+  - Padding provides space between the edge of the box and the content. By
+  adjusting padding, you can push the paragraph text in by a view pixels
+  while leaving the heading closer to the edge.
+    - You can add top or bottom padding to increase the vertical space between
+    paragraphs or around image.
+    - Padding should not be used to move the content box
+  - Margin should never be used as padding.
+    - Use margin to move the box relative to the other box on the page.
+  - CSS margin and padding are declared in pixels starting at the top and working
+  clockwise around the box. (Top, right, bottom, left)
+- Some CSS properties that do not apply to grid container and grid item.
+  - float and clear
+  - All column properties
+  - The ::first-line and ::first-letter pseudo-elements
+  - The vertical align property
+- Applying float: left to 2 paragraph text, it won't really wrap the left
+text when the container element in display: grid
+
+
 
 Optimization important tips:
 * CSS is a render blocking resource. Get it to the client as soon and as quickly as possible to optimize the time to first render. ( change it to like media type to render quickly )
@@ -66,3 +94,4 @@ For Handlebars:
 
 * inspiration design:
   - http://www.flarin.com/
+  - Using Bulma for CSS remake 2018
